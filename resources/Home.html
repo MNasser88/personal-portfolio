@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+home
+</title>
+<link rel="icon" type="image/x-icon" href="resources/home.png">
+<meta charset="UTF-8">
+<style>
+ #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+</style>
+
+</head>
+
+
+
+<body style="background-color:#A4EAD0 ;">
+    <video autoplay muted loop id="myVideo">
+        <source src="resources/rain.mp4" type="video/mp4">
+      </video>
+<div style="position: absolute;">
+<h1 class="h" style="text-align: center;color: blue;">Mohamed Nasser Mohamed</h1>
+<h1 class="h" style="text-align: center;color: blue;">محمد ناصر محمد</h1>
+<span class="h" style="display: inline-block; width: 80% ;float : left;">
+    <div>
+        My Pirsonal infor
+        <ul>
+            <li>age:24</li>
+            <li>address: Alexndria</li>
+            <li>phone:01045464532</li>
+            <li>Faculty: <a href="https://www.alexu.edu.eg/index.php/en/" target="_blank"> Engineering </a>
+            </li>
+            <li>graduation year:2023</li>
+            <li>hobbies
+                <ol>
+                    <li>Football</li>
+                    <li>Singing</li>
+                </ol>
+            </li>
+            <li>email : <a href="moa@yahoo.com"target="_blank">moa@yahoo.com</a></li>
+            <li>
+                about me: 
+<br>
+Section 14.7 Suffixes for Integer and Floating-Point Literals
+<br> C provides integer and floating-point suffixes for specifying the types of integer and floating-
+<br>point constants. The integer suffixes are: u or U for an unsigned integer, l or L for a long integer,
+<br>and ul or UL for an unsigned long integer. If an integer constant is not suffixed, its type is deter-
+<br>mined by the first type capable of storing a value of that size (first int, then long int, then un-
+<br>signed long int). The floating-point suffixes are: f or F for a float, and l or L for a long double.
+<br>A floating-point constant that’s not suffixed is of type double.
+<br>Section 14.8 Signal Handling
+<br> The signal-handling library enables trapping of unexpected events with function signal. Func-
+<br>tion signal receives two arguments—an integer signal number and a pointer to the signal-han-
+dling function.
+<br> Signals can also be generated with function raise and an integer argument.
+<br>Section 14.9 Dynamic Memory Allocation: Functions calloc and realloc
+<br> The general utilities library (<stdlib.h>) provides two functions for dynamic memory alloca-
+tion—calloc and realloc. These functions can be used to create dynamic arrays.
+<br> Function calloc receives two arguments—the number of elements (nmemb) and the size of each
+<br>element (size)—and initializes the elements of the array to zero. The function returns either a
+<br>pointer to the allocated memory, or a NULL pointer if the memory is not allocated.
+<br> Function realloc changes the size of an object allocated by a previous call to malloc, calloc or
+<br>realloc. The original object’s contents are not modified, provided that the amount of memory
+allocated is larger than the amount allocated previously.
+<br> Function realloc takes two arguments—a pointer to the original object (ptr) and the new size
+<br>of the object (size). If ptr is NULL, realloc works identically to malloc. If size is 0 and the point-
+<br>er received is not NULL, the memory for the object is freed. Otherwise, if ptr is not NULL and size
+<br>is greater than zero, realloc tries to allocate a new block of memory for the object. If the new
+<br>space cannot be allocated, the object pointed to by ptr is unchanged. Function realloc returns
+<br>either a pointer to the reallocated memory, or a NULL pointer.
+<br>Section 14.10 Unconditional Branching with goto
+<br> The result of the goto statement is a change in the flow of control of the program. Program ex-
+<br>ecution continues at the first statement after the label specified in the goto statement.
+<br> A label is an identifier followed by a colon. A label must appear in the same function as the goto
+<br>statement that refers to it.
+<br>Later, we’ll show how to achieve the performance advantage of pass-by-reference
+<br>while simultaneously achieving the software engineering advantage of protecting the
+<br>caller’s data from corruption.
+<br>A reference parameter is an alias for its corresponding argument in a function call. To
+<br>indicate that a function parameter is passed by reference, simply follow the parameter’s
+<br>type in the function prototype by an ampersand (&); use the same notation when listing
+<br>the parameter’s type in the function header. For example, the following declaration in a
+<br>function header
+<br>when read from right to left is pronounced “count is a reference to an int.” In the function
+<br>call, simply mention the variable by name to pass it by reference. Then, mentioning the
+<br>variable by its parameter name in the body of the called function actually refers to the orig-
+<br>inal variable in the calling function, and the original variable can be modified directly by
+<br>the called function. As always, the function prototype and header must agree.
+<br>Passing Arguments by Value and by Reference
+<br>Figure 15.5 compares pass-by-value and pass-by-reference with reference parameters. The
+<br>“styles” of the arguments in the calls to function squareByValue (line 17) and function
+<br>squareByReference (line 22) are identical—both variables are simply mentioned by name
+<br>in the function calls. Without checking the function prototypes or function definitions,
+<br>it’s not possible to tell from the calls alone whether either function can modify its argu-
+<br>ments. Because function prototypes are mandatory, however, the compiler has no trouble
+<br>resolving the ambiguity. Recall that a function prototype tells the compiler the type of data
+<br>returned by the function, the number of parameters the function expects to receive, the
+<br>types of the parameters, and the order in which they are expected. The compiler uses this
+<br>information to validate function calls. In C, function prototypes are not required. Making
+<br>them mandatory in C++ enables type-safe linkage, which ensures that the types of the ar-
+<br>guments conform to the types of the parameters. Otherwise, the compiler reports an error.
+<br>Locating such type errors at compile time helps prevent the runtime errors that can occur
+<br>in C when arguments of incorrect data types are
+            </li>
+
+
+        </ul>
+    </div>
+</span>
+<span class="h" style="display: inline-block; width: 20% ;float: left;">
+    <img src="Resources/welcome image.jpg" width="200px" height="200px" >
+</span>
+<p>An iframe with default borders:</p>
+<iframe src="about.html" width="100%" height="300">
+</iframe>
+    <hr  style="width: 100%;size: 3;">
+    <a class="h" href="#top" style=" position:relative; left: 40%;" >home</a>
+    
+    <a class="h" href="contact.html" style=" position:relative; left: 50%;" >contact</a>
+   
+    <a class="h" href="about.html" style=" position:relative; left: 60%;" >about</a>
+    <div>
+    <h1  style="text-align: center;font-family: 'Times New Roman', Times, serif;font-weight: 200;color:blue">My social media</h1>
+
+
+<a href="https://www.facebook.com/" target="_blank" style="position: relative;left:40%;">
+<img src="Resources/Facebook-icon.png" alt="Facebook-icon" width="50px" height="50px">
+</a>
+&nbsp; 
+&nbsp; 
+
+
+<a href="https://x.com/?lang=ar" target="_blank" style="position: relative;left:40%;">
+ <img src="Resources/twitter.png" alt="twitter" width="50px" height="50px">
+</a>
+&nbsp; 
+&nbsp; 
+
+
+<a href="https://www.google.com/intl/ar/gmail/about/" target="_blank" style="position: relative;left:40%;">
+<img src="Resources/google+.png" alt="google" width="50px" height="50px">
+</a>
+
+&nbsp; 
+&nbsp; 
+<a href="https://www.linkedin.com/" target="_blank" style="position: relative;left:40%;">
+<img src="Resources/linkedin.png" alt="linkedin" width="50px" height="50px">
+</a>
+<br>
+<a href="#top"  style="position: relative;left:95%;">
+    <img src="Resources/png.png" alt="top" width="50px" height="50px">
+
+</div>
+
+</div>
+</body>
+
+</html>

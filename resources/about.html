@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<title>about</title>
+<style>
+    body{
+    
+  background-image: url('resources/welcome\ image.jpg');
+  background-size: cover;
+    }
+</style>
+</head>
+
+<body>
+
+    <br>
+    Section 14.7 Suffixes for Integer and Floating-Point Literals
+    <br> C provides integer and floating-point suffixes for specifying the types of integer and floating-
+    <br>point constants. The integer suffixes are: u or U for an unsigned integer, l or L for a long integer,
+    <br>and ul or UL for an unsigned long integer. If an integer constant is not suffixed, its type is deter-
+    <br>mined by the first type capable of storing a value of that size (first int, then long int, then un-
+    <br>signed long int). The floating-point suffixes are: f or F for a float, and l or L for a long double.
+    <br>A floating-point constant that’s not suffixed is of type double.
+    <br>Section 14.8 Signal Handling
+    <br> The signal-handling library enables trapping of unexpected events with function signal. Func-
+    <br>tion signal receives two arguments—an integer signal number and a pointer to the signal-han-
+    dling function.
+    <br> Signals can also be generated with function raise and an integer argument.
+    <br>Section 14.9 Dynamic Memory Allocation: Functions calloc and realloc
+    <br> The general utilities library (<stdlib.h>) provides two functions for dynamic memory alloca-
+    tion—calloc and realloc. These functions can be used to create dynamic arrays.
+    <br> Function calloc receives two arguments—the number of elements (nmemb) and the size of each
+    <br>element (size)—and initializes the elements of the array to zero. The function returns either a
+    <br>pointer to the allocated memory, or a NULL pointer if the memory is not allocated.
+    <br> Function realloc changes the size of an object allocated by a previous call to malloc, calloc or
+    <br>realloc. The original object’s contents are not modified, provided that the amount of memory
+    allocated is larger than the amount allocated previously.
+    <br> Function realloc takes two arguments—a pointer to the original object (ptr) and the new size
+    <br>of the object (size). If ptr is NULL, realloc works identically to malloc. If size is 0 and the point-
+    <br>er received is not NULL, the memory for the object is freed. Otherwise, if ptr is not NULL and size
+    <br>is greater than zero, realloc tries to allocate a new block of memory for the object. If the new
+    <br>space cannot be allocated, the object pointed to by ptr is unchanged. Function realloc returns
+    <br>either a pointer to the reallocated memory, or a NULL pointer.
+    <br>Section 14.10 Unconditional Branching with goto
+    <br> The result of the goto statement is a change in the flow of control of the program. Program ex-
+    <br>ecution continues at the first statement after the label specified in the goto statement.
+    <br> A label is an identifier followed by a colon. A label must appear in the same function as the goto
+    <br>statement that refers to it.
+    <br>Later, we’ll show how to achieve the performance advantage of pass-by-reference
+    <br>while simultaneously achieving the software engineering advantage of protecting the
+    <br>caller’s data from corruption.
+    <br>A reference parameter is an alias for its corresponding argument in a function call. To
+    <br>indicate that a function parameter is passed by reference, simply follow the parameter’s
+    <br>type in the function prototype by an ampersand (&); use the same notation when listing
+    <br>the parameter’s type in the function header. For example, the following declaration in a
+    <br>function header
+    <br>when read from right to left is pronounced “count is a reference to an int.” In the function
+    <br>call, simply mention the variable by name to pass it by reference. Then, mentioning the
+    <br>variable by its parameter name in the body of the called function actually refers to the orig-
+    <br>inal variable in the calling function, and the original variable can be modified directly by
+    <br>the called function. As always, the function prototype and header must agree.
+    <br>Passing Arguments by Value and by Reference
+    <br>Figure 15.5 compares pass-by-value and pass-by-reference with reference parameters. The
+    <br>“styles” of the arguments in the calls to function squareByValue (line 17) and function
+    <br>squareByReference (line 22) are identical—both variables are simply mentioned by name
+    <br>in the function calls. Without checking the function prototypes or function definitions,
+    <br>it’s not possible to tell from the calls alone whether either function can modify its argu-
+    <br>ments. Because function prototypes are mandatory, however, the compiler has no trouble
+    <br>resolving the ambiguity. Recall that a function prototype tells the compiler the type of data
+    <br>returned by the function, the number of parameters the function expects to receive, the
+    <br>types of the parameters, and the order in which they are expected. The compiler uses this
+    <br>information to validate function calls. In C, function prototypes are not required. Making
+    <br>them mandatory in C++ enables type-safe linkage, which ensures that the types of the ar-
+    <br>guments conform to the types of the parameters. Otherwise, the compiler reports an error.
+    <br>Locating such type errors at compile time helps prevent the runtime errors that can occur
+    <br>in C when arguments of incorrect data types are
+
+</body>
+</html>
